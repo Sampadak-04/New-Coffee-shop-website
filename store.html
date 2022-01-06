@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CAFENA | Store and cart</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="store.js" async></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/storeStyle.css">
+
+    </head>
+    <body>
+        <script>
+            function mouseoverfun(x)
+            {
+                x.style.backgroundColor = "brown";
+            }
+            function mouseoutfun(x)
+            {
+                x.style.backgroundColor = "#BD9A7A";
+            }
+            </script>
+        <header class="header">
+
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+        
+            <nav class="navbar">
+                <a href="index.html#home">home</a>
+                <a href="index.html#about">about</a>
+                <a href="index.html#menu">menu</a>
+                <a href="index.html#review">review</a>
+                <a href="index.html#contact">contact</a>
+                <a href="index.html#blogs">blogs</a>
+            </nav>
+        
+            <div class="icons">
+                <div class="fas fa-search" id="search-btn"></div>
+                <a href="store.html"><div class="fas fa-shopping-cart" id="cart-btn"></div></a>
+                <div class="fas fa-bars" id="menu-btn"></div>
+            </div>
+        
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here...">
+                <label for="search-box" class="fas fa-search"></label>
+            </div>
+            </header><br><br><br>
+        <section class="container content-section">
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title" id="proName">Coffee</span>
+                    <img class="shop-item-image" src="Images/shop1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id="proPrice">Rs.120</span>
+                        <button class="btn btn-primary shop-item-button" onmouseover="mouseoverfun(this)" onmouseout="mouseoutfun(this)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title" id="proName">Special coffee</span>
+                    <img class="shop-item-image" src="Images/CC1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id="proPrice">Rs.150</span>
+                        <button class="btn btn-primary shop-item-button" onmouseover="mouseoverfun(this)" onmouseout="mouseoutfun(this)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title" id="proName">Sandwich</span>
+                    <img class="shop-item-image" src="Images/Sandwhich.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id="proPrice">Rs.100</span>
+                        <button class="btn btn-primary shop-item-button" onmouseover="mouseoverfun(this)" onmouseout="mouseoutfun(this)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title" id="proName">Momos</span>
+                    <img class="shop-item-image" src="Images/Momoms.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id="proPrice">Rs.145</span>
+                        <button class="btn btn-primary shop-item-button" onmouseover="mouseoverfun(this)" onmouseout="mouseoutfun(this)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header"></h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title" id="proName">Pizza</span>
+                    <img class="shop-item-image" src="Images/pizza.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id="proPrice">Rs.190</span>
+                        <button class="btn btn-primary shop-item-button" onmouseover="mouseoverfun(this)" onmouseout="mouseoutfun(this)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title" id="proName">Peri peri</span>
+                    <img class="shop-item-image" src="Images/periperi.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id="proPrice">Rs.50</span>
+                        <button class="btn btn-primary shop-item-button" onmouseover="mouseoverfun(this)" onmouseout="mouseoutfun(this)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title" id="proName">Thick creamy coffee</span>
+                    <img class="shop-item-image" src="Images/thickcreamy.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id="proPrice">Rs.150</span>
+                        <button class="btn btn-primary shop-item-button" onmouseover="mouseoverfun(this)" onmouseout="mouseoutfun(this)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title" id="proName">Cheese Pasta</span>
+                    <img class="shop-item-image" src="Images/pasta.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id="proPrice">Rs.60</span>
+                        <button class="btn btn-primary shop-item-button" onmouseover="mouseoverfun(this)" onmouseout="mouseoutfun(this)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title" id="proName">Ice cream</span>
+                    <img class="shop-item-image" src="Images/icecreams.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id="proPrice">Rs.30</span>
+                        <button class="btn btn-primary shop-item-button" onmouseover="mouseoverfun(this)" onmouseout="mouseoutfun(this)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title" id="proName">Pastry</span>
+                    <img class="shop-item-image" src="Images/pastry2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price" id="proPrice">Rs.20</span>
+                        <button class="btn btn-primary shop-item-button" onmouseover="mouseoverfun(this)" onmouseout="mouseoutfun(this)" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">Rs.0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" onclick="openWindow()" type="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">CAFENA</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="#" target="_blank">
+                           <label style="color: midnightblue;">Facebook(Meta)</label>
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <label style="color: midnightblue;">Instagram</label>
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <label style="color: midnightblue;">Twitter</label>
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            function openWindow()
+            {
+                var win = window.open("Product","","width=300,height=300");
+                win.document.write("Thank you for your purchase...!");
+            }
+        </script>
+    </body>
+</html>
